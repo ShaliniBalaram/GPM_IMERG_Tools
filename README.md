@@ -2,6 +2,15 @@
 
 A collection of Python tools for downloading, subsetting, and analyzing GPM IMERG precipitation data.
 
+This project is aimed at satellite-precipitation workflows where a user needs to collect NASA GPM IMERG files, clip them to a study boundary, and produce quick precipitation summaries for hydrology or drought/flood screening.
+
+## Skills Demonstrated
+
+- NASA Earthdata/GPM IMERG download workflows
+- HDF5 and NetCDF precipitation data handling
+- Shapefile-based spatial subsetting
+- Reproducible plotting and timestamped analysis outputs
+
 ## Overview
 
 This repository contains tools to:
