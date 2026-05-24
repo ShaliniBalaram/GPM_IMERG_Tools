@@ -6,7 +6,6 @@ This script spatially subsets (clips) GPM IMERG data using a shapefile.
 It processes HDF5 files to extract precipitation data for a specific region
 and saves the results as NetCDF files.
 
-Author: Cascade
 Date: March 21, 2025
 """
 

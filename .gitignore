@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+logs/
+GPM_IMERG_Data/
+GPM_IMERG_Subset/
+Analysis_Results/
+analysis_results/
+gpm_urls.txt

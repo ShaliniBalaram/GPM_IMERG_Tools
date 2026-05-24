@@ -5,7 +5,6 @@ analyze_gpm_data.py
 This script analyzes and visualizes GPM IMERG data that has been subset to a specific region.
 It creates visualizations of precipitation data and saves results in timestamped folders.
 
-Author: Cascade
 Date: March 21, 2025
 """
 
@@ -13,11 +12,12 @@ import os
 import glob
 import argparse
 import xarray as xr
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import re
 from datetime import datetime
-import random
 import time
 import logging
 
@@ -90,7 +90,8 @@ def find_files_with_precipitation(directory, num_samples=50, threshold=0.1, logg
     
     # If there are too many files, take a sample
     if len(all_files) > num_samples:
-        sample_files = random.sample(all_files, num_samples)
+        sample_indices = np.linspace(0, len(all_files) - 1, num_samples, dtype=int)
+        sample_files = [all_files[i] for i in sample_indices]
     else:
         sample_files = all_files
     

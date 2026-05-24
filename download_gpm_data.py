@@ -5,7 +5,6 @@ download_gpm_data.py
 This script downloads GPM IMERG data from NASA's servers for a specified date range.
 It generates URLs for the specified timeframe and downloads the corresponding HDF5 files.
 
-Author: Cascade
 Date: March 21, 2025
 """
 

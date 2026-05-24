@@ -20,7 +20,7 @@ This repository contains tools to:
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/GPM_IMERG_Tools.git
+   git clone https://github.com/ShaliniBalaram/GPM_IMERG_Tools.git
    cd GPM_IMERG_Tools
    ```
 
@@ -41,8 +41,8 @@ Use `download_gpm_data.py` to download GPM IMERG data for a specified date range
 python download_gpm_data.py \
   --start-date 2023-01-01 \
   --end-date 2023-01-31 \
-  --username "your_nasa_earthdata_username" \
-  --password "your_nasa_earthdata_password" \
+  --username "$NASA_EARTHDATA_USERNAME" \
+  --password "$NASA_EARTHDATA_PASSWORD" \
   --download-dir "GPM_IMERG_Data" \
   --include-monthly
 ```
@@ -50,8 +50,8 @@ python download_gpm_data.py \
 **Required arguments:**
 - `--start-date`: Start date (YYYY-MM-DD)
 - `--end-date`: End date (YYYY-MM-DD)
-- `--username`: NASA Earthdata username
-- `--password`: NASA Earthdata password
+- `--username`: NASA Earthdata username, preferably supplied from an environment variable
+- `--password`: NASA Earthdata password, preferably supplied from an environment variable
 
 **Optional arguments:**
 - `--download-dir`: Directory to store downloaded files (default: "GPM_IMERG_Data")
